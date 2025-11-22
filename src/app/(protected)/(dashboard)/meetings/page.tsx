@@ -26,7 +26,12 @@ const Page = async ({ searchParams }: PageProps) => {
       <MeetingsListHeader />
       <HydrateClient>
         <ErrorBoundary
-          fallback={<ErrorState title="Failed to load meetings." />}
+          fallback={
+            <ErrorState
+              title="Something went wrong!"
+              description="Failed to load meetings."
+            />
+          }
         >
           <Suspense fallback={<LoadingState title="Loading Meetings" />}>
             <MeetingsView />

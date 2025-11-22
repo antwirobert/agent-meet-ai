@@ -12,10 +12,21 @@ const Page = async ({ params }: { params: Promise<{ meetingId: string }> }) => {
   return (
     <HydrateClient>
       <ErrorBoundary
-        fallback={<ErrorState title="Failed to load meeting details" />}
+        fallback={
+          <ErrorState
+            title="Something went wrong!"
+            description="Failed to load meeting details"
+            className="mt-15"
+          />
+        }
       >
         <Suspense
-          fallback={<LoadingState title="Loading Meeting Details..." />}
+          fallback={
+            <LoadingState
+              title="Loading Meeting Details..."
+              className="mt-15"
+            />
+          }
         >
           <MeetingIdView meetingId={meetingId} />
         </Suspense>

@@ -36,7 +36,7 @@ export const MeetingIdViewHeader = ({
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
               <Link href="/meetings" className="text-xl">
-                My Meeting
+                My Meetings
               </Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -55,7 +55,7 @@ export const MeetingIdViewHeader = ({
       </Breadcrumb>
       <DropdownMenu>
         <DropdownMenuTrigger asChild className="cursor-pointer">
-          <MoreVerticalIcon className="size-4" />
+          <MoreVerticalIcon className="size-5" />
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuGroup>
