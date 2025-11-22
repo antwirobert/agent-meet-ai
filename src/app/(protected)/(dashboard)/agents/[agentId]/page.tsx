@@ -18,9 +18,19 @@ const Page = async ({ params }: PageProps) => {
   return (
     <HydrateClient>
       <ErrorBoundary
-        fallback={<ErrorState title="Failed to load agent details" />}
+        fallback={
+          <ErrorState
+            title="Something went wrong!"
+            description="Failed to load agent details."
+            className="mt-15"
+          />
+        }
       >
-        <Suspense fallback={<LoadingState title="Loading Agent Details..." />}>
+        <Suspense
+          fallback={
+            <LoadingState title="Loading Agent Details..." className="mt-15" />
+          }
+        >
           <AgentIdView agentId={agentId} />
         </Suspense>
       </ErrorBoundary>

@@ -84,7 +84,7 @@ export const DashboardSidebar = () => {
           <Separator className="opacity-30 bg-[#616771]" />
         </div>
 
-        <SidebarGroup>
+        {/* <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
               {secondSection.map((item) => (
@@ -107,7 +107,7 @@ export const DashboardSidebar = () => {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
-        </SidebarGroup>
+        </SidebarGroup> */}
       </SidebarContent>
       <SidebarFooter>
         <UserProfile />

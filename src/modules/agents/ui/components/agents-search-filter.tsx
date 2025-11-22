@@ -6,7 +6,7 @@ export const SearchFilter = () => {
   const [filters, setFilters] = useAgentsFilters()
 
   return (
-    <div className="relative mb-5">
+    <div className="relative">
       <Input
         type="text"
         placeholder="Filter by name"

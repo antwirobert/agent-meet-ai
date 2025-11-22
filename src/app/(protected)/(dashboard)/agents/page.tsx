@@ -25,7 +25,14 @@ const Page = async ({ searchParams }: PageProps) => {
     <section className="px-4 md:px-8">
       <AgentsListHeader />
       <HydrateClient>
-        <ErrorBoundary fallback={<ErrorState title="Failed to load agents." />}>
+        <ErrorBoundary
+          fallback={
+            <ErrorState
+              title="Something went wrong!"
+              description="Failed to load agents."
+            />
+          }
+        >
           <Suspense fallback={<LoadingState title="Loading Agents..." />}>
             <AgentsView />
           </Suspense>

@@ -1,8 +1,15 @@
+import { cn } from '@/lib/utils'
 import { Loader2Icon } from 'lucide-react'
 
-export const LoadingState = ({ title }: { title: string }) => {
+export const LoadingState = ({
+  title,
+  className,
+}: {
+  title: string
+  className?: string
+}) => {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className={cn('flex flex-col items-center gap-5', className)}>
       <Loader2Icon className="size-15 animate-spin text-primary" />
       <p className="font-semibold animate-pulse">{title}</p>
     </div>

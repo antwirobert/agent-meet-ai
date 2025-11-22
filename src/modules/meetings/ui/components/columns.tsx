@@ -51,7 +51,7 @@ export const columns: ColumnDef<MeetingsGetAll[number]>[] = [
         </h3>
         <div className="flex items-center gap-2">
           <CornerDownRightIcon className="size-3 opacity-60" />
-          <span className="capitalize max-w-[100px] truncate text-muted-foreground font-semibold">
+          <span className="capitalize max-w-[100px] truncate text-muted-foreground">
             {row.original.agent.name}
           </span>
           <GeneratedAvatar
@@ -98,7 +98,7 @@ export const columns: ColumnDef<MeetingsGetAll[number]>[] = [
     header: 'Meeting Duration',
     cell: ({ row }) => (
       <Badge variant="outline" className="[&>svg]:size-4">
-        <ClockFadingIcon className="text-green-600" />
+        <ClockFadingIcon className="text-blue-500" />
 
         {row.original.duration
           ? formatDuration(row.original.duration)

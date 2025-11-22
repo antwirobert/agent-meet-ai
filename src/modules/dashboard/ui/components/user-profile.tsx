@@ -109,7 +109,7 @@ export const UserProfile = () => {
       <DropdownMenuContent
         align="end"
         side="right"
-        className="bg-background rounded-md w-56 p-2"
+        className="bg-background rounded-md w-60 p-2"
       >
         <DropdownMenuLabel className="text-black max-w-[200px] truncate">
           {session.user.name}
