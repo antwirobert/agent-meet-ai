@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AgentMeet AI  
+### Real-Time Video Meetings Powered by Autonomous AI Agents
 
-## Getting Started
+AgentMeet AI is a next-generation video calling platform where every meeting includes a **real-time AI agent** trained for a specific role. These aren’t summaries or offline scripts — each session is a **live call** with an AI that listens, responds, and participates just like a human.
 
-First, run the development server:
+Whether you need a **language tutor**, **interview coach**, **sales assistant**, or a completely custom persona, AgentMeet AI gives you a powerful assistant directly inside your meeting.
 
+---
+
+## 🌟 Features
+
+### 🎥 Real-Time AI Video Calls  
+Start meetings with AI agents that interact live using **Stream Video SDK** and **OpenAI Realtime API**.
+
+### 🧠 Custom AI Agents  
+Create agents with custom names, personalities, tones, and behaviors.  
+Example instruction:  
+> “Be direct, hyper-driven, and over the top like a founder who just raised a seed round.”
+
+### 📅 Meeting Scheduling  
+Meetings can be created, scheduled, cancelled, or started later. Upcoming meetings stay in a pending state until you join.
+
+### ⚙️ Automated Processing  
+After a meeting ends, background jobs (via **Ingest** and **AgentKit**) automatically:
+- Fetch transcripts  
+- Summarize content with AI  
+- Generate structured insights  
+- Save everything to the database  
+- Mark the meeting as **Completed**
+
+### 📄 Intelligent Meeting Output  
+Every completed meeting includes:
+
+#### ✅ Summary  
+A clean AI-generated breakdown of discussion topics with timestamps.
+
+#### 💬 Transcript  
+A fully searchable transcript with keyword highlighting.
+
+#### 🎞️ Recording  
+A complete replay of the entire call.
+
+#### 🤖 ChatGPT-Style Post-Meeting Chat  
+Ask natural questions about the meeting:  
+> “Who asked for advice?”  
+> “What did the agent recommend for the startup idea?”
+
+Powered by **Stream Chat SDK**.
+
+### 💵 SaaS Subscription  
+AgentMeet AI runs as a subscription-based SaaS product:
+- Free trial tier  
+- Upgrade flow powered by **Polar**  
+- Secure hosted checkout  
+
+### 🔐 Authentication  
+Authentication is handled by **Better Auth**:
+- Email login  
+- Social providers  
+- Session management  
+- Native integration with Polar for billing
+
+### 📱 Responsive UI  
+Every page and component gracefully adapts to mobile screens.  
+Modals and dropdowns convert to mobile drawers for a smooth experience.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Framework**
+- Next.js 15 (App Router)
+- React 19  
+- Server Components + SSR  
+
+### **API & Type Safety**
+- tRPC  
+- TanStack Query  
+
+### **Database & ORM**
+- Drizzle ORM  
+- Postgres via Neon  
+
+### **Styling**
+- Tailwind CSS v4  
+- Shadcn/UI  
+
+### **Auth**
+- Better Auth  
+
+### **Payments**
+- Polar  
+
+### **Video & Chat**
+- Stream Video SDK  
+- Stream Chat SDK  
+
+### **Background Jobs**
+- Ingest  
+- AgentKit  
+
+### **AI**
+- OpenAI Realtime API  
+- AI summary, transcript intelligence, and real-time agent responses  
+
+---
+
+## 📸 Demo Flow
+
+1. Create a new meeting  
+2. Name your session (e.g., *Startup Coaching Call*)  
+3. Create/select an AI agent  
+4. Add persona instructions  
+5. Start the meeting and join the lobby  
+6. Enter the call and interact with your AI agent in real time  
+7. After the call, wait for processing  
+8. Access summaries, transcripts, replay, and AI-powered chat  
+
+---
+
+## 📂 Project Structure
+
+src/
+│── app/ # Next.js routes (App Router)
+│── components/ # UI components
+│── server/ # tRPC routers, server logic
+│── db/ # Drizzle schemas & database
+│── agents/ # Agent definitions & personalities
+│── jobs/ # Ingest background workflows
+│── styles/ # Tailwind files
+│── utils/ # Helpers & shared logic
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/antwirobert/agentmeet-ai.git
+cd agentmeet-ai
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+``bash
+npm install
+```
+<br />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a .env file:
+```bash
+DATABASE_URL=
+BETTER_AUTH_SECRET=
+BETTER_AUTH_URL=
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+NEXT_PUBLIC_APP_URL=
+NEXT_PUBLIC_STREAM_VIDEO_API_KEY=
+STREAM_VIDEO_SECRET_KEY=
+NEXT_PUBLIC_STREAM_CHAT_API_KEY=
+STREAM_CHAT_SECRET_KEY=
+OPENAI_API_KEY=
+```
+```bash
+npm run dev
+```
+<br />
 
-## Learn More
+🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome!
+Please submit an issue or pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧑‍💻 Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Robert Antwi
+Creator of AgentMeet AI
