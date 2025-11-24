@@ -17,6 +17,7 @@ import { UpcomingState } from '../components/upcoming-state'
 import CancelledState from '../components/cancelled-state'
 import ProcessingState from '../components/processing-state'
 import { ActiveState } from '../components/active-state'
+import { CompletedState } from '../components/completed-state'
 
 export const MeetingIdView = ({ meetingId }: { meetingId: string }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -86,7 +87,7 @@ export const MeetingIdView = ({ meetingId }: { meetingId: string }) => {
         />
         {isCancelled && <CancelledState />}
         {isProcessing && <ProcessingState />}
-        {isCompleted && <div>Completed</div>}
+        {isCompleted && <CompletedState data={data} />}
         {isActive && <ActiveState meetingId={meetingId} />}
         {isUpcoming && (
           <UpcomingState

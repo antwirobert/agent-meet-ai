@@ -17,10 +17,11 @@ const CallView = ({ meetingId }: Props) => {
 
   if (data.status === 'completed') {
     return (
-      <div className="flex h-screen items-center justify-center">
+      <div className="h-screen flex flex-col items-center justify-center">
         <ErrorState
           title="Meeting has ended"
           description="You can no longer join this meeting"
+          className="bg-background py-10 px-4 rounded-lg"
         />
       </div>
     )
