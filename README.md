@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="/public/screenshot2.png" alt="Live AI Meeting" width="80%" style="border-radius: 12px;" />
+  <img src="/public/Screenshot2.png" alt="Live AI Meeting" width="80%" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
-  <img src="/public/screenshot1.png" alt="Meetings Dashboard" width="60%" style="border-radius: 12px;" />
+  <img src="/public/Screenshot1.png" alt="Meetings Dashboard" width="60%" style="border-radius: 12px;" />
 </p>
 
 
