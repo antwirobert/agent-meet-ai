@@ -37,7 +37,7 @@ export const columns: ColumnDef<MeetingsGetAll[number]>[] = [
     header: 'Meeting Name',
     cell: ({ row }) => (
       <div className="flex flex-col gap-y-1 p-2">
-        <h3 className="font-semibold text-lg capitalize max-w-[100px] truncate">
+        <h3 className="font-semibold text-lg capitalize max-w-[200px] truncate">
           {row.original.name}
         </h3>
         <div className="flex items-center gap-2">
