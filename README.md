@@ -9,12 +9,14 @@
 </p>
 
 
-# 🚀 AgentMeet AI  
+# 🚀 AgentMeet AI — Production-Ready SaaS for Real-Time AI Meetings
 ### Real-Time Video Meetings Powered by Autonomous AI Agents
 
-AgentMeet AI is a next-generation video calling platform where every meeting includes a **real-time AI agent** trained for a specific role. These aren’t summaries or offline scripts — each session is a **live call** with an AI that listens, responds, and participates just like a human.
+AgentMeet AI is a **full SaaS application** that delivers real-time video meetings with autonomous AI agents — complete with authentication, billing, subscriptions, and a fully automated post-meeting pipeline.
 
-Whether you need a **language tutor**, **interview coach**, **sales assistant**, or a completely custom persona, AgentMeet AI gives you a powerful assistant directly inside your meeting.
+Every meeting includes a live AI agent trained for a specific role. These aren’t summaries or offline scripts — each session is a true real-time call with an AI that listens, responds, and participates like a human.
+
+Whether you need a **language tutor**, **interview coach**, **sales assistant**, or a custom persona, AgentMeet AI gives you a fully interactive AI assistant directly inside your meeting.
 
 ---
 
@@ -60,9 +62,10 @@ Powered by **Stream Chat SDK**.
 
 ### 💵 SaaS Subscription  
 AgentMeet AI runs as a subscription-based SaaS product:
-- Free trial tier  
-- Upgrade flow powered by **Polar**  
-- Secure hosted checkout  
+- Free trial tier
+- Subscription upgrades
+- Secure hosted checkout
+- Billing managed through **Polar**
 
 ### 🔐 Authentication  
 Authentication is handled by **Better Auth**:
@@ -100,7 +103,7 @@ Modals and dropdowns convert to mobile drawers for a smooth experience.
 - Better Auth  
 
 ### **Payments**
-- Polar  
+- Polar (SaaS subscriptions)
 
 ### **Video & Chat**
 - Stream Video SDK  
